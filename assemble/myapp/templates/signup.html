@@ -1,0 +1,38 @@
+<form method="POST" action="{% url 'signup' %}">
+    {% csrf_token %}
+    <p>아이디</p>
+    <input type="text" name="username">
+    <br>
+
+    <p>비밀번호</p>
+    <input type="password" name="password">
+    <br>
+
+    <!-- <p>비밀번호 확인</p>
+    <input type="password" name="confirm">
+    <br> -->
+
+    <p>이름</p>
+    <input type="text" name="name">
+    <br>
+
+    <p>이메일</p>
+    <input type="email" name="email">
+    <br>
+
+    <p>휴대폰</p>
+    <input type="number" name="phone">
+    <br>
+
+    <p>성별</p>
+    <input type="radio" name="gender" value="Male">남자
+    <input type="radio" name="gender" value="Female">여자
+    <input type="radio" name="gender" value="None">선택안함
+    <br>
+
+    <p>생년월일</p>
+    <input type="date" name="birthday">
+    <br>
+
+    <input type="submit" value="회원가입">
+</form>
